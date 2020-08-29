@@ -1,0 +1,352 @@
+ @charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans CJK JP"),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+ }
+
+ @font-face {
+    font-family: 'Noto Sans JP Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local("Noto Sans CJK JP"),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Semibold.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Semibold.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Semibold.otf) format('opentype');
+ }
+
+html{
+	font-size: 62.5%;/*16px ×62.5% = 10px*/
+}
+body{
+    -webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscal;
+	-o-transform: rotate(0.028deg);
+   -ms-transform: rotate(0.028deg);
+   -moz-transform: rotate(0.028deg);
+   -webkit-transform: rotate(0.028deg);
+   transform: rotate(0.028deg);
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+p{
+    font-family: "リュウミンM-KL","ヒラギノ明朝", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.4;
+    color: #515151;
+}
+h3{
+    text-align: center;
+}
+.h2{
+   text-align: center;
+    padding: 60px;
+}
+.text_center{
+    text-align: center;
+}
+.pc_none{
+    display: none;
+}
+.all{
+    overflow: hidden;
+}
+/*---fadeIn---*/
+.fadein {
+  opacity: 0;
+  transform : translate(0, 50px);
+  transition : all 1500ms;
+}
+
+.fadein.scrollin{
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/*---fadeInここまで---*/
+/*----header----*/
+header{
+    background-image: url("../img/kv_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 795px;
+}
+.kv_outer{
+    position: relative;
+    max-width: 88%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+
+.logo{
+   margin: 20px;
+}
+.title{
+    position: absolute;
+    right: 0;
+}
+.date{
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 50px;
+}
+.tokuten{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*---about---*/
+.about{
+    background-image: url("../img/about_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about_outer p{
+    padding: 0 0 30px
+}
+.btn_outer{
+    padding: 0 0 50px;
+}
+.btn{
+    margin: 0 100px;
+}
+/*---event01---*/
+.event01{
+    background-image: url("../img/bg02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.event01 p{
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+.event01_wrap{
+    display: flex;
+    justify-content: space-around;
+    
+}
+/*----event02----*/
+.event02_wrap{
+    background-image: url("../img/event02_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+}
+.event02_h3{
+    padding: 80px;
+}
+.event02_outer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+h4{
+    font-family: "リュウミンM-KL","ヒラギノ明朝", sans-serif;
+    font-size: 3.6rem;
+    color: #917636;
+    padding: 50px 0 30px;
+}
+.flex_r{
+   padding-right: 10%;
+}
+.flex_l{
+    padding-left: 10%;
+}
+.btn02{
+    padding: 50px 0 70px;
+}
+/*---access---*/
+.access{
+    background-image: url("../img/bg02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.access_p{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.access_p p{
+    padding-bottom: 30px;
+    color: #fff;
+}
+.map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 26.28%;
+    position: relative;
+}
+.map iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+/*---footer---*/
+footer{
+    height: 130px;
+}
+.footer_wrap{
+    display: flex;
+    justify-content: space-between;
+    max-width: 88%;
+   margin: 0 auto;
+    padding: 70px 0 0;
+}
+small{
+    padding: 30px 0 0;
+     font-family: "リュウミンM-KL","ヒラギノ明朝", sans-serif;
+    font-size: 1.4rem;
+    color: #515151;
+}
+@media screen and (max-width: 480px) {
+    .sp_none{
+        display: none;
+    }
+    .pc_none{
+        display: block;
+    }
+    p{
+        line-height: 1.8;
+    }
+    header{
+        background-image: url("../img/kv_sp.jpg");
+        height: 400px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .title{
+        width: 70%;
+    }
+    .date{
+        width: 40%;
+    }
+    .tokuten{
+        width: 40%;
+        padding: 0 0 20px;
+    }
+/* ---sp_about---   */
+    .about{
+        background-image: url("../img/about_bg_sp.jpg");
+    }
+    .about_outer{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .h2{
+        width: 50%;
+         padding: 40px 0;
+        margin: 0 auto;
+    }
+    .btn{
+        width: 60%;
+    }
+/*----event01---*/
+    h3{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .about_outer{
+        justify-content: center;
+    }
+    .about_outer p{
+        padding: 30px 0 0;
+    }
+    .event01_img{
+        width: 60%;
+        padding-left: 21%;
+    }
+    
+    /*----event02----  */
+    .event02_wrap{
+        background-image: url("../img/event_bg_sp.jpg");
+    }
+    
+    .event02_h3{
+        padding: 50px;
+    }
+    .event02_outer{
+        display: block;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    h4{
+        font-size: 2.4rem;
+    }
+    .flex_l{
+        padding-left: 0;
+    }
+    .btn02{
+        width: 60%;
+    }
+/* ----accsess---   */
+    .access{
+        background-image: url("../img/bg02_sp.jpg");
+    }
+    .access_p p{
+    padding-bottom: 20px;
+}
+    .map{
+    padding-bottom: 58.66%;
+}
+/*  ---footer---*/
+    footer{
+        height: 70px;
+    }
+    .footer_wrap{
+        max-width: 96%;
+        padding: 30px 0 0;
+    }
+    .footer_logo{
+        width: 130px;
+    }
+    small{
+        font-size: 1rem;
+        padding: 12px 0 0;
+    }
+}
+@media screen and (max-width: 1055px){
+    p{
+        font-size: 1.4rem;
+    }
+    .tab_none{
+        display: none;
+    }
+    .tab_kv{
+        width: 66%;
+    }
+    .tab_kv02{
+        width: 36%;
+    }
+    .tab_img{
+        width: 50%;
+    }
+    .flex_r{
+        padding-right: 0;
+    }
+    .flex_l{
+        padding-left: 0;
+    }
+    .btn{
+        margin: 0 auto;
+    }
+    
+}
+
+
