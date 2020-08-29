@@ -1,0 +1,382 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans CJK JP"),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+
+ }
+
+html{
+	font-size: 62.5%; /*1rem=10px*/
+
+}
+body{
+	font-family: 'Roboto','Noto Sans JP',sans-serif;
+	color: #333;
+	font-size: 1.6rem;
+	line-height: 30px;
+	font-feature-settings: "palt";
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	
+}
+
+h2{
+	font-family: 'Roboto',sans-serif;
+	color: #fff;
+	font-size: 3.6rem;
+	letter-spacing:0.2em;
+	text-align: center;
+	
+}
+
+h3{
+	font-family: 'Noto Sans JP',sans-serif;
+	font-weight: bold;
+	color: #333;
+	font-size: 1.8rem;
+	padding-bottom: 60px;
+	
+}
+
+small{
+	font-family: 'Montserrat',sans-serif;
+	color: #fff;
+	font-size: 1.1rem;
+}
+
+
+.text-center{
+	text-align: center;
+}
+
+
+
+/*-----------------
+header-pc
+------------------*/
+.pc_img{
+	display: inline;
+}
+
+.sp_img{
+	display: none;
+}
+	
+.header{
+	position: relative;
+	height: 600px;
+	background-image: url(../images/header/kv_img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.box{
+	position: absolute;
+	transform: translate(-50%,-45%);
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	background-color: rgba(7,133,123,0.68);
+	padding-bottom: 40px;
+}
+
+.rcu-logo{
+	padding: 32px 0;
+	
+}
+
+/*----------------
+main-pc
+------------------*/
+.title1{
+	background-color: #454848;
+	padding: 32px 0;
+}
+.title2{
+	background-color: #07857b;
+	padding: 32px 0;
+}
+
+.text{
+ 	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 140px;
+	max-width: 750px;
+}
+
+.time{
+	display:inline-block;
+    vertical-align: middle;
+}
+.info{
+	display: inline;
+    vertical-align: middle; 
+}
+.seminar_img{
+	display: inline;
+	width: 100%;
+}
+
+.address{
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 64px;
+	max-width: 750px;
+	line-height: 27px;
+}
+
+.entry{
+	line-height: 27px;
+}
+
+.maps{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+}
+
+.google_map{
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 35.71%;  /*1400:368 = 368÷1400×100で計算*/
+	overflow: hidden;       /*はみ出た部分を表示しない*/
+}
+
+
+.fee{
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.form-text{
+	/*
+ 	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 140px;　autoが入ってもまとめられる*/
+	margin: 80px auto 140px auto;
+	max-width: 750px;
+	
+}
+
+.form-text dt{
+	font-weight: bold;
+}
+
+.condition{
+	margin-bottom: 120px;
+}
+
+.form{
+	margin: 0 auto;
+}
+
+.form-title{
+	margin-right: 36px;
+}
+
+.form-parts{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	border: none;
+	border-bottom: solid 1px #999;
+	padding: 8px 0;
+	font-size: 1.6rem;
+	outline: none;
+}
+
+.form-item{
+	margin-bottom: 72px;
+}
+.label-radio{
+	margin-left: 36px;
+}
+
+.form-parts__radio{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: 50%; /*正円を描く	*/
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	background-color: #c3c3c3;
+	vertical-align: -6px; /*タグ内のパーツ位置を調整する*/
+	outline: none;
+}
+
+.form-parts__radio:checked{
+	background-color: #07857b;
+	box-shadow: 0 0 0 2px #fff,0 0 0 3px #07857b;
+}
+
+input#entry-button{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	color: #fff;
+	font-size: 2.4rem;
+	letter-spacing: 0.2em;
+	width: 360px;
+	padding: 20px 0 20px;
+	margin: 0 auto;
+	background-color: #07857b;
+	border: none;
+}
+
+/*--------------------
+footer-pc
+----------------------*/
+
+.footer{
+	background-color: #454548;
+	line-height: 27px;
+	padding: 80px 0;
+}
+
+.footer_add{
+	color: #fff;
+	margin: 32px 0 64px;
+}
+
+	
+/*------------------------
+SP
+--------------------------*/
+
+@media screen and (max-width:768px){
+	
+
+
+/*----------------------
+header-sp
+------------------------*/
+	.header{
+		height: 300px;
+		background-image: url(../images/header/kv_img__sp.jpg);
+
+		}
+
+	.rcu-logo{
+		width: 50px;
+		margin: auto;
+		padding: 16px;
+
+		}
+
+	.pc_img{
+		display: none;
+
+		}
+
+	.sp_img{
+		display: inline;
+		width: 83.2%;
+
+		}
+
+	.box{
+		padding-bottom: 16px;
+
+		}
+
+	/*-----------------------
+		main-sp
+	--------------------------*/
+
+
+	.title1{
+		font-size: 2rem;
+		padding: 16px 0;
+
+		}
+	.title2{
+		font-size: 2rem;
+		padding: 16px 0;
+		}
+
+	.text{
+		margin: 40px 20px 70px;
+
+		}
+	.profile{
+		padding-bottom: 40px;
+		}
+
+	.seminar_img{
+		display: none;
+		
+	}
+
+	.seminar_img-sp{
+		display: inline;
+		width: 100%;
+	}
+	
+	.address{
+		margin: 40px 20px;
+		
+	}	
+	.google_map{
+		padding-bottom: 66.7%;  /* 2÷3＝3:2 */
+	}
+	
+	.form-text{
+		margin: 40px 20px 70px;
+	}
+	
+	.condition{
+		margin-bottom: 32px;
+	}
+	.form-title{
+		display: block;
+		margin: 40px 0 24px;
+	}
+	
+	.label-radio{
+		margin-left: 0;
+		margin-right: 20px;
+		margin-bottom: 40px;
+	}
+	
+	input#entry-button{
+		width: 100%;
+		margin: 56px 0 70px;
+	}
+	
+/*-----------------------
+	footer-sp
+--------------------------*/
+	
+	.footer{
+		padding: 40px 0;
+	}
+	.footer_add{
+		margin: 32px;
+	
+	}
+	
+	small{
+		margin-bottom: 40px;
+	}	
+	
+	
+	
+
+	
+	
+	
+}
